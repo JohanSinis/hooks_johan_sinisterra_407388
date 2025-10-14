@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.activitycallbacks"
-    compileSdk = 35
+    namespace = "com.example.saveandrestore"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.activitycallbacks"
-        minSdk = 26
+        applicationId = "com.example.saveandrestore"
+        minSdk = 34
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -40,22 +40,23 @@ android {
 }
 
 dependencies {
+    // Core Android
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.activity.compose)
     
     // Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2024.02.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.activity:activity-compose:1.9.0")
-    implementation("androidx.compose.ui:ui-tooling")
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
     
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

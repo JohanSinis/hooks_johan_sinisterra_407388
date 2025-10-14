@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Activity Callbacks"
+rootProject.name = "Save and Restore"
 include(":app")
  
