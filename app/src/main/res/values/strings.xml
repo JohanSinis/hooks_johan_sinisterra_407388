@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Activity Results</string>
+    
+    <!-- Color Picker Activity Strings -->
+    <string name="header_text_main">Choose your favorite color from the rainbow!</string>
+    <string name="header_text_picker">Rainbow Colors</string>
+    <string name="footer_text_picker">Click on your favorite color button below</string>
+    <string name="color_chosen_message">%s is your favorite color</string>
+    <string name="submit_button_text">CHOOSE COLOR</string>
+    <string name="title_activity_color_picker">ColorPickerActivity</string>
+    
+    <!-- Color Names -->
+    <string name="red">RED</string>
+    <string name="orange">ORANGE</string>
+    <string name="yellow">YELLOW</string>
+    <string name="green">GREEN</string>
+    <string name="blue">BLUE</string>
+    <string name="indigo">INDIGO</string>
+    <string name="violet">VIOLET</string>
+    
+    <!-- Main Activity Strings -->
+    <string name="main_header_text">Choose your favorite rainbow color!</string>
+    <string name="main_button_text">CHOOSE COLOR</string>
+    <string name="no_color_chosen">No color was chosen</string>
+</resources>

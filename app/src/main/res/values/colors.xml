@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Rainbow Colors -->
+    <color name="rainbow_red">#FF0000</color>
+    <color name="rainbow_orange">#FFA500</color>
+    <color name="rainbow_yellow">#FFFF00</color>
+    <color name="rainbow_green">#008000</color>
+    <color name="rainbow_blue">#0000FF</color>
+    <color name="rainbow_indigo">#4B0082</color>
+    <color name="rainbow_violet">#8A2BE2</color>
+    
+    <!-- Selection colors -->
+    <color name="selected_color">#FFD700</color>
+    <color name="unselected_color">#F5F5F5</color>
+</resources>
